@@ -47,7 +47,7 @@ comments: true
 
 
 ## 배운점
-1. Comparator 함수 복습
+
 
 
 
