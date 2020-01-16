@@ -26,7 +26,7 @@ comments: true
 |s|answer|
 |:---:|:---:|:---:|
 |pPoooyY|true|
-|Pyy|1|false|
+|Pyy|false|
 
   
 ## 입출력 예 설명
