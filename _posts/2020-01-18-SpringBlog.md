@@ -45,8 +45,7 @@ Servers 탭의 생성된 서버를 더블클릭해 Server Config화면으로 들
 ![ErrorServer2](/photo/springBlog/1.CreateProject/8.ErrorServer.PNG)  
 HTTP포트를 8081로 바꿔주어 충돌을 해결합니다.  
 
-![StartServer1](/photo/springBlog/1.CreateProject/9.StartServer.PNG)  
-![StartServer2](/photo/springBlog/1.CreateProject/10.StartServer.PNG)  
+![StartServer1](/photo/springBlog/1.CreateProject/9.StartServer.PNG)   
 이제 서버를 구동하면 에러없이 정상적으로 구동되는것을 확인할수 있습니다. 
 
 
