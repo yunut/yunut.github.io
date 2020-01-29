@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[프로그래머스 알고리즘] 구명보트"
-date:   2020-01-22
+date:   2020-01-27
 excerpt: ""
 tag:
 - coding test 
