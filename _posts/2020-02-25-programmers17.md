@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[프로그래머스 알고리즘] 2 X n 타일링"
-date:   2020-02-24
+date:   2020-02-25
 excerpt: ""
 tag:
 - coding test 
