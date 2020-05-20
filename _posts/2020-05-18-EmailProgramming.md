@@ -22,21 +22,21 @@ comments: true
 * MRA(Mail Retrieval Agent)
   원격 서버에 있는 우편함에서 사용자의 MUA로 메시지를 가져오는 서비스(POP,IMAP 프로토콜)
 
-***
-
 ### 흐름
 ![flow](/photo/mailsystem/mailflow.jpg)  
+
+***
 
 ## 단순 텍스트 메시지
 * 전자메일은 RFC 822에서 기술한 단순 텍스트 메시지 포맷 기반
 * 텍스트 메시지는 헤더필드와 본문(+봉투)으로 구성
 * 헤더 필드는 key-value 쌍으로 구성, 필수헤더는 메시지의 송신자, 수신자 정보, 날짜정보 제공
 * 본문의 행은 RFC822는 글자제한 X, RFC821(SMTP)는 7비트 문자로 작성, 1000문자 미만으로 제한(관행적으로 MTA,MUA는 긴행을 잘 처리하지 못해 한 행을 80문자 미만 작성)
-
+  
 ### 헤더
 메시지 라우팅에 관한 정보를 가지고 있음  
 MUA는 긴 헤더 값을 긴 행(256문자 초과X)으로 보내거나 나눠서(행 당 72문자 초과X) 보낼수 있음
-
+  
 #### 헤더의 순서
 * Return-Path : 메일 반송시 주소
 * Received : 수신자 정보(서버)
@@ -47,18 +47,18 @@ MUA는 긴 헤더 값을 긴 행(256문자 초과X)으로 보내거나 나눠서
 * To : 수신자
 * CC : 참조
 * Others(Reply-To 등)
-
+  
 #### 필수 헤더
 * Date
 * From
 * To or BCC
-
+  
 #### 옵션 헤더
 메시지 배포 횟수, 메일 시스템 부가 정보 제공하기위해 사용
 * CC : 참조
 * BCC : 숨겨진 참조
 * Subject : 제목
-
+  
 #### 동적 헤더
 MTA에서 Date 같은 필수 헤더를 만들어 주지만, 사용자가 정의 할수 있는 헤더
 * Message-ID : 메시지를 식별하기위한 고유한 메시지 ID 
@@ -132,13 +132,13 @@ ASCII문자가 아닌 문자를 "=XX" 와 같은 모양으로 인코딩 7bit ASC
 데이터 크기가 33% 증가함  
   
 예) "가나다" (2바이트 X 3자 = 6바이트) => sKGzqrTZ (1바이트 X 8자 = 8바이트)
-
+  
 ### MIME 경계
 ![mime](/photo/mailsystem/mime.PNG)
 
 
 ## MIME 호환 메시지 작성하기
-
+  
 ### 최소의 MIME 메시지 헤더 요구사항
 * MIME-Version 
 * Content-Type : US-ASCII 문자집합이 아닐경우
@@ -160,7 +160,7 @@ STMP는 연결지향적, 텍스트 기반으로 작동하는 프로토콜
 교환 명령
 MAIL : 수신자 지정, RCPT : 송신자 지정, DATA : 메시지 내용의 시작
 
-![smtpflow](/photo/mailsystem/smtpflow.PNG) {:.aligncenter}
+![smtpflow](/photo/mailsystem/smtpflow.PNG) 
 
 
 ### SMTP 명령어
