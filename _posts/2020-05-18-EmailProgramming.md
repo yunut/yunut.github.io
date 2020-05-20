@@ -156,7 +156,8 @@ STMP는 연결지향적, 텍스트 기반으로 작동하는 프로토콜
 교환 명령
 MAIL : 수신자 지정, RCPT : 송신자 지정, DATA : 메시지 내용의 시작
 
-![smtpflow](/photo/mailsystem/smtpflow.PNG)
+![smtpflow](/photo/mailsystem/smtpflow.PNG) {:.aligncenter}
+
 
 ### SMTP 명령어
 * HELO [도메인 네임] : 클라이언트를 식별하기 위해 사용
