@@ -86,19 +86,19 @@ MIME 메시지 헤더(MIME 호환 메시지, 메시지 구조와 인코딩 정�
 #### MIME 메시지 헤더
 * MIME-Version : MIME 버전 정보
 * Content-Type : 메시지 데이터 유형 식별
-  ** text
-  ** image
-  ** audio
-  ** video
-  ** application - 특수 데이터 (인쇄) 파일유형을 인식하지 못하는경우 application/octet-steream
-  ** multipart - 다중 첨부파일
-  ** message - 다중메시지
+  ** text  
+  ** image  
+  ** audio  
+  ** video  
+  ** application - 특수 데이터 (인쇄) 파일유형을 인식하지 못하는경우 application/octet-steream  
+  ** multipart - 다중 첨부파일  
+  ** message - 다중메시지  
 * Content-Transfer-Encoding : MIME 정보
-  ** 7bit
-  ** 8bit
-  ** binary
-  ** quoted-printable
-  ** base64
+  ** 7bit  
+  ** 8bit  
+  ** binary  
+  ** quoted-printable  
+  ** base64  
 * Content-ID : 식별 ID, message/external-body 타입이 사용되면 필수
 * Content-Description : 텍스트 설명
 * Contnet-Disposition : MUA 디스플레이 힌트
