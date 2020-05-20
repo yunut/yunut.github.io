@@ -22,6 +22,7 @@ comments: true
 * MRA(Mail Retrieval Agent)
   원격 서버에 있는 우편함에서 사용자의 MUA로 메시지를 가져오는 서비스(POP,IMAP 프로토콜)
 
+***
 
 ### 흐름
 ![flow](/photo/mailsystem/mailflow.jpg)  
@@ -73,7 +74,8 @@ MTA에서 Date 같은 필수 헤더를 만들어 주지만, 사용자가 정의 
 사용자 정의에따라 목적된 메일이 지정된 메일서버에 전송하기위해 만드는 헤더  
 다른 헤더와 구분하기위해 X-로 시작
   
-  
+***  
+
 ## MIME(Multipurpose Internet Mail Extensions)
 텍스트 메시지를 확장하여 Binary file 포함 가능  
 바이너리 파일을 번역, 7비트 ASCII 텍스트로 인코딩
@@ -149,6 +151,8 @@ ASCII문자가 아닌 문자를 "=XX" 와 같은 모양으로 인코딩 7bit ASC
 * MIME 경계 표시기(boundary)가 파라미터로 주어져야함
 * 컨텐츠 전송 인코딩은 디폴트로 7비트
 
+***
+
 ## ESMTP
 TCP/IP 기반의 발전된 SMTP(Simple Mail Transfer Protocol), PORT 25  
 SMTP는 보안과 호환성의 문제로 그대로는 사용하지 않음. SMTP-AUTH(송신자 인증 서비스), ESMTP(SASL을 이용한 보안 연결) 등으로 사용  
@@ -179,6 +183,8 @@ MAIL : 수신자 지정, RCPT : 송신자 지정, DATA : 메시지 내용의 시
 * TURN : 클라이언트와 서버가 역할을 바꾸도록 요청
 * VERB : 서버가 상세모드를 사용하도록 요청
 * ETRN : 특정한 호스트, 도메인의 메일 큐를 처리
+
+***
 
 ## POP
 이메일 서버에 도착한 메일을 클라이언트에 가져와 확인할때 사용  
@@ -251,3 +257,5 @@ SELECT, EXAMINE 명령어로 우편함선택시 선택상태로 진입
 * UID : 검색된 결과 메시지에 고유 ID 반환
 * CHECK : NOOP과 같음
 * CLOSE : 종료
+
+***
